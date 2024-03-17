@@ -1,0 +1,75 @@
+@import '../../../styles/sass/utils/variables';
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.42;
+	letter-spacing: 0.01em;
+	text-transform: none;
+	cursor: pointer;
+	transition: $transition;
+	margin-bottom: 56px;
+	padding: 0;
+	margin: 0;
+	background: transparent;
+	border: none;
+
+	&:hover {
+		color: $link-hover-color;
+	}
+
+	&:hover svg {
+		fill: $link-hover-color;
+	}
+}
+
+.primary {
+	color: $primary-text-color;
+}
+
+.secondary {
+	color: $secondary-text-color;
+}
+
+.accent {
+	color: $accent-color;
+}
+
+.text {
+	font-family: 'Darker Grotesque', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.42;
+	letter-spacing: 0.01em;
+	text-transform: none;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.none {
+	text-transform: none;
+}
+
+.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 8px;
+
+	& svg {
+		width: 18px;
+		height: 18px;
+		fill: $secondary-text-color;
+	}
+}

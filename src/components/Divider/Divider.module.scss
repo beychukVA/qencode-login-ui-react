@@ -1,0 +1,22 @@
+@import '../../styles/sass/utils/variables';
+
+.container {
+	position: relative;
+	border-top: 1px solid $divider-border-color;
+	height: 0;
+	width: 100%;
+	margin: 30px 0;
+
+	&::after {
+		content: 'OR';
+		position: absolute;
+		left: calc(50% - 12px);
+		top: -17px;
+		padding: 8px 5px;
+		background-color: $primary-background-color;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 1.33;
+		color: $divider-text-color;
+	}
+}
